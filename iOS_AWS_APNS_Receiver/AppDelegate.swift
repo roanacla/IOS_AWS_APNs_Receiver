@@ -7,6 +7,8 @@
 
 import UIKit
 import CoreData
+import UserNotifications
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
+    UNUserNotificationCenter.current().requestAuthorization(options: [.badge, .sound, .alert], completionHandler: {granted, error in
+      guard granted else { return }
+      DispatchQueue.main.async {
+        application.registerForRemoteNotifications()
+      }
+    })
     return true
+  }
+  
+  
+  func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+    let token = deviceToken.reduce("", { $0 + String(format: "%02x", $1) })
+    print(token)
   }
 
   // MARK: UISceneSession Lifecycle
