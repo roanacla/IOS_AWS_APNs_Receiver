@@ -51,6 +51,7 @@
 		DB22F322252AA18000917DF9 /* IOS_AWS_APNs_ReceiverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOS_AWS_APNs_ReceiverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB22F326252AA18000917DF9 /* IOS_AWS_APNs_ReceiverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_AWS_APNs_ReceiverUITests.swift; sourceTree = "<group>"; };
 		DB22F328252AA18000917DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB22F33A252AA23800917DF9 /* IOS_AWS_APNs_Receiver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IOS_AWS_APNs_Receiver.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 		DB22F300252AA17F00917DF9 /* IOS_AWS_APNs_Receiver */ = {
 			isa = PBXGroup;
 			children = (
+				DB22F33A252AA23800917DF9 /* IOS_AWS_APNs_Receiver.entitlements */,
 				DB22F301252AA17F00917DF9 /* AppDelegate.swift */,
 				DB22F303252AA17F00917DF9 /* SceneDelegate.swift */,
 				DB22F305252AA17F00917DF9 /* ViewController.swift */,
@@ -440,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IOS_AWS_APNs_Receiver/IOS_AWS_APNs_Receiver.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G3B2ACWEFM;
 				INFOPLIST_FILE = IOS_AWS_APNs_Receiver/Info.plist;
@@ -459,6 +462,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IOS_AWS_APNs_Receiver/IOS_AWS_APNs_Receiver.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G3B2ACWEFM;
 				INFOPLIST_FILE = IOS_AWS_APNs_Receiver/Info.plist;
