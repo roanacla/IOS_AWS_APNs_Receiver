@@ -6,14 +6,25 @@
 //
 
 import UIKit
+import Combine
 
 class ViewController: UIViewController {
 
+  //MARK: - IBOutlets
+  
+  @IBOutlet weak var image: UIImageView!
+  @IBOutlet weak var mainLabel: UILabel!
+  
+  var imageLoader: ImageLoader!
+  
+  //MARK: - View Life Cycle
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
   }
-
-
+  
+  func displayImage(typeOfGun: String) {
+    mainLabel.text = "We found a weapon!"
+    image.image = UIImage(named: typeOfGun)
+  }
 }
 

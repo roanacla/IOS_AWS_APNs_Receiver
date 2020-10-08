@@ -16,6 +16,9 @@
 		DB22F311252AA18000917DF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB22F30F252AA18000917DF9 /* LaunchScreen.storyboard */; };
 		DB22F31C252AA18000917DF9 /* IOS_AWS_APNs_ReceiverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22F31B252AA18000917DF9 /* IOS_AWS_APNs_ReceiverTests.swift */; };
 		DB22F327252AA18000917DF9 /* IOS_AWS_APNs_ReceiverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22F326252AA18000917DF9 /* IOS_AWS_APNs_ReceiverUITests.swift */; };
+		DB6C77EB252FBB7500505194 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6C77EA252FBB7500505194 /* ImageLoader.swift */; };
+		DBACA2B5252E8B6A00D9387C /* NotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBACA2B3252E8B6A00D9387C /* NotificationDelegate.swift */; };
+		DBACA2B6252E8B6A00D9387C /* ApnsUploads.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBACA2B4252E8B6A00D9387C /* ApnsUploads.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		DB22F326252AA18000917DF9 /* IOS_AWS_APNs_ReceiverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_AWS_APNs_ReceiverUITests.swift; sourceTree = "<group>"; };
 		DB22F328252AA18000917DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB22F33A252AA23800917DF9 /* IOS_AWS_APNs_Receiver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IOS_AWS_APNs_Receiver.entitlements; sourceTree = "<group>"; };
+		DB6C77EA252FBB7500505194 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		DBACA2B3252E8B6A00D9387C /* NotificationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationDelegate.swift; sourceTree = "<group>"; };
+		DBACA2B4252E8B6A00D9387C /* ApnsUploads.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApnsUploads.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,9 @@
 			children = (
 				DB22F33A252AA23800917DF9 /* IOS_AWS_APNs_Receiver.entitlements */,
 				DB22F301252AA17F00917DF9 /* AppDelegate.swift */,
+				DBACA2B4252E8B6A00D9387C /* ApnsUploads.swift */,
+				DBACA2B3252E8B6A00D9387C /* NotificationDelegate.swift */,
+				DB6C77EA252FBB7500505194 /* ImageLoader.swift */,
 				DB22F303252AA17F00917DF9 /* SceneDelegate.swift */,
 				DB22F305252AA17F00917DF9 /* ViewController.swift */,
 				DB22F307252AA17F00917DF9 /* Main.storyboard */,
@@ -263,7 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB6C77EB252FBB7500505194 /* ImageLoader.swift in Sources */,
+				DBACA2B5252E8B6A00D9387C /* NotificationDelegate.swift in Sources */,
 				DB22F30C252AA17F00917DF9 /* IOS_AWS_APNs_Receiver.xcdatamodeld in Sources */,
+				DBACA2B6252E8B6A00D9387C /* ApnsUploads.swift in Sources */,
 				DB22F306252AA17F00917DF9 /* ViewController.swift in Sources */,
 				DB22F302252AA17F00917DF9 /* AppDelegate.swift in Sources */,
 				DB22F304252AA17F00917DF9 /* SceneDelegate.swift in Sources */,

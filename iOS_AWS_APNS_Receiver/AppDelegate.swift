@@ -13,16 +13,9 @@ import UserNotifications
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
-    UNUserNotificationCenter.current().requestAuthorization(options: [.badge, .sound, .alert], completionHandler: {granted, error in
-      guard granted else { return }
-      DispatchQueue.main.async {
-        application.registerForRemoteNotifications()
-      }
-    })
+    registerForPushNotifications(application: application)
     return true
   }
   
